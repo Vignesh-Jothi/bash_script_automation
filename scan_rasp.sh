@@ -13,7 +13,9 @@ check_nmap() {
 check_nmap
 
 # Define the network range to scan
-NETWORK_RANGE="192.168.1.0/24"
+echo -n "Enter your NETWORK_IP: "
+
+read NETWORK_RANGE
 
 # Run the nmap scan
 echo "Scanning network for Raspberry Pi devices..."
